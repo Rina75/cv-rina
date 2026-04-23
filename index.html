@@ -25,7 +25,6 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
 }
 
 .hero {
@@ -59,6 +58,11 @@ body {
 .progress {background:#334155;}
 .progress-bar {background:#6366f1;}
 
+.icon-title i {
+  margin-right:10px;
+  color:#38bdf8;
+}
+
 footer {
   background:#020617;
   color:#94a3b8;
@@ -72,7 +76,7 @@ footer {
 
 <!-- TOGGLE -->
 <button onclick="toggleMode()" class="btn btn-warning position-fixed top-0 end-0 m-3">
-<i class="bi bi-moon"></i>
+<i class="bi bi-moon-stars"></i>
 </button>
 
 <!-- HERO -->
@@ -80,17 +84,19 @@ footer {
 <div class="container">
 <img src="foto.jpg" class="profile mb-3">
 <h1 id="typing"></h1>
-<p>Web Developer</p>
-<a href="cv.pdf" download class="btn btn-light mt-3">Download CV</a>
+<p><i class="bi bi-code-slash"></i> Web Developer</p>
+<a href="cv.pdf" download class="btn btn-light mt-3">
+<i class="bi bi-download"></i> Download CV
+</a>
 </div>
 </section>
 
 <!-- ABOUT -->
 <section class="section text-center">
 <div class="container">
-<h2 data-aos="fade-up">Tentang Saya</h2>
-<p data-aos="fade-up">
-Saya adalah seorang Web Developer yang memiliki ketertarikan dalam membangun aplikasi berbasis web yang modern, responsif, dan efisien. Saya senang mempelajari teknologi baru serta mengembangkan solusi digital yang bermanfaat.
+<h2 class="icon-title"><i class="bi bi-person-circle"></i>Tentang Saya</h2>
+<p>
+Saya adalah seorang Web Developer yang memiliki ketertarikan dalam membangun aplikasi berbasis web yang modern, responsif, dan efisien.
 </p>
 </div>
 </section>
@@ -98,28 +104,30 @@ Saya adalah seorang Web Developer yang memiliki ketertarikan dalam membangun apl
 <!-- SKILLS -->
 <section class="section">
 <div class="container">
-<h2 class="text-center mb-4">Skills</h2>
+<h2 class="text-center icon-title mb-4">
+<i class="bi bi-lightning-charge"></i>Skills
+</h2>
 
 <div class="row">
 <div class="col-md-6">
-<p>HTML</p>
+<p><i class="bi bi-filetype-html"></i> HTML</p>
 <div class="progress mb-3"><div class="progress-bar" style="width:90%"></div></div>
 
-<p>CSS</p>
+<p><i class="bi bi-filetype-css"></i> CSS</p>
 <div class="progress mb-3"><div class="progress-bar" style="width:85%"></div></div>
 
-<p>JavaScript</p>
+<p><i class="bi bi-filetype-js"></i> JavaScript</p>
 <div class="progress mb-3"><div class="progress-bar" style="width:75%"></div></div>
 </div>
 
 <div class="col-md-6">
-<p>PHP</p>
+<p><i class="bi bi-filetype-php"></i> PHP</p>
 <div class="progress mb-3"><div class="progress-bar" style="width:80%"></div></div>
 
-<p>Flutter</p>
+<p><i class="bi bi-phone"></i> Flutter</p>
 <div class="progress mb-3"><div class="progress-bar" style="width:70%"></div></div>
 
-<p>App Script & Autocrat</p>
+<p><i class="bi bi-gear"></i> App Script & Autocrat</p>
 <div class="progress mb-3"><div class="progress-bar" style="width:75%"></div></div>
 </div>
 </div>
@@ -129,32 +137,34 @@ Saya adalah seorang Web Developer yang memiliki ketertarikan dalam membangun apl
 <!-- PENDIDIKAN -->
 <section class="section text-center">
 <div class="container">
-<h2>Pendidikan</h2>
-<p>SMA Negeri 1 Kabangka (IPA)</p>
-<p>S1 Teknik Informatika - Universitas Halu Oleo</p>
+<h2 class="icon-title"><i class="bi bi-mortarboard"></i>Pendidikan</h2>
+<p><i class="bi bi-building"></i> SMA Negeri 1 Kabangka (IPA)</p>
+<p><i class="bi bi-mortarboard-fill"></i> S1 Teknik Informatika - Universitas Halu Oleo</p>
 </div>
 </section>
 
 <!-- PENGALAMAN -->
-<section class="section">
-<div class="container text-center">
-<h2>Pengalaman</h2>
+<section class="section text-center">
+<div class="container">
+<h2 class="icon-title"><i class="bi bi-briefcase"></i>Pengalaman</h2>
 <p><b>MagangHub Fresh Graduate</b></p>
-<p>Posisi: Pengolah Data dan Informasi</p>
+<p><i class="bi bi-gear-fill"></i> Pengolah Data dan Informasi</p>
 </div>
 </section>
 
 <!-- PROJECT -->
 <section class="section">
 <div class="container">
-<h2 class="text-center mb-4">Project</h2>
+<h2 class="text-center icon-title mb-4">
+<i class="bi bi-kanban"></i>Project
+</h2>
 
 <div class="row">
 
 <div class="col-md-6">
 <div class="card p-3" data-bs-toggle="modal" data-bs-target="#p1">
 <img src="project1.jpg" class="img-fluid mb-2">
-<h5>Dashboard Data Pelatihan</h5>
+<h5><i class="bi bi-bar-chart"></i> Dashboard Data Pelatihan</h5>
 <p>Pengelolaan data pelatihan BPVP Kendari</p>
 </div>
 </div>
@@ -162,7 +172,7 @@ Saya adalah seorang Web Developer yang memiliki ketertarikan dalam membangun apl
 <div class="col-md-6">
 <div class="card p-3" data-bs-toggle="modal" data-bs-target="#p2">
 <img src="project2.jpg" class="img-fluid mb-2">
-<h5>Web LSP BPVP Kendari</h5>
+<h5><i class="bi bi-globe"></i> Web LSP BPVP Kendari</h5>
 <p>Sistem website untuk lembaga sertifikasi</p>
 </div>
 </div>
@@ -171,50 +181,24 @@ Saya adalah seorang Web Developer yang memiliki ketertarikan dalam membangun apl
 </div>
 </section>
 
-<!-- MODAL -->
-<div class="modal fade" id="p1">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-body">
-<h5>Dashboard Data Pelatihan</h5>
-<p>Sistem untuk mengelola data peserta pelatihan, monitoring, dan laporan berbasis web.</p>
-</div>
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="p2">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-body">
-<h5>Web LSP BPVP Kendari</h5>
-<p>Website untuk mendukung proses sertifikasi dan manajemen data lembaga.</p>
-</div>
-</div>
-</div>
-</div>
-
 <!-- CONTACT -->
 <section class="section text-center">
-<h2>Contact</h2>
-<p>Email: waoderina75@gmail.com</p>
+<h2 class="icon-title"><i class="bi bi-envelope"></i>Contact</h2>
+<p><i class="bi bi-envelope-fill"></i> emailkamu@gmail.com</p>
 
 <a href="#" class="btn btn-dark m-1"><i class="bi bi-github"></i></a>
 <a href="#" class="btn btn-primary m-1"><i class="bi bi-linkedin"></i></a>
 </section>
 
 <footer>
-<p>© 2026 Rina Portfolio</p>
+<p><i class="bi bi-c-circle"></i> 2026 Rina Portfolio</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
-AOS.init();
-
-// typing effect
-let text = "Rina";
+// typing
+let text="Rina";
 let i=0;
 function typing(){
  if(i<text.length){
@@ -225,7 +209,7 @@ function typing(){
 }
 typing();
 
-// toggle mode
+// toggle
 function toggleMode(){
  document.body.classList.toggle("light-mode");
 }
